@@ -5,11 +5,10 @@ int counter(void);
 int main() {
   for(int k = 0; k < 10; k++)
     printf("counter(): %d\n", counter() );
-    //zsrtd
   return 0;
   }
 
 int counter(void) {
-  static int count = 0;
+  static int count = 0; //asdg
   return count++;
 }
