@@ -1,6 +1,14 @@
 #include <stdio.h)
 
+int counter(void);
+
 int main() {
-  printf("Test");
+  for(int k = 0; k < 10; k++)
+    printf("counter(): %d\n", counter() );
   return 0;
   }
+
+int counter(void) {
+  static int count = 0;
+  return count++;
+}
