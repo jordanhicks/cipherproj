@@ -5,6 +5,7 @@ int counter(void);
 int main() {
   for(int k = 0; k < 10; k++)
     printf("counter(): %d\n", counter() );
+    //zsrtd
   return 0;
   }
 
