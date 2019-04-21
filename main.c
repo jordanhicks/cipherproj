@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-main()  {
-  
+int main()  {
+    
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("Integers found: %d %d %d\n", a, b, c);
+    
   return 0;
 }
