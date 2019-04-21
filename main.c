@@ -2,9 +2,17 @@
 
 int main()  {
     
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    printf("Integers found: %d %d %d\n", a, b, c);
+    char text[200]; //message that will be taken
+    int key; //the shiftkey
+    
+    printf("Enter your text: ");
+    scanf("%s", text);
+    printf("%s\n", text);
+    
+    printf("Enter your key: ");
+    scanf("%d", &key);
+    printf("%d\n", key);
+    
     
   return 0;
 }
