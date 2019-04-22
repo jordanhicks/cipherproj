@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void CaesarEncryption(char,int);
-
 int main()  {
     
     char text[200]; //message that will be taken
@@ -22,28 +20,33 @@ int main()  {
             scanf("%d", &key); //receiving the key
             printf("%d\n", key);
             
-            printf("The encrypted text is: ");
-            CaesarEncryption(text,key);
-            break;
+            char caesar; //encrypted text
+            int i; //letter value
             
+            for(i=0; text[i] != '\0'; ++i){
+                caesar = text[i]; //make encrypted text the same as our input text
+                
+                if (caesar >= 'A' && caesar <= 'Z'){
+                    caesar = caesar + key; //adding the key to the text
+                    
+                    if(caesar > 'Z'){
+                        caesar = caesar - 65; //from ASCII value                       
+                    }
+                
+                text[i] = caesar;
+                
+                }
+            }
+            
+            printf("The encrypted text is: %s", text);
+            break;
+        
+        case 2: //Caesar Cipher Decryption
+        
         default :
             printf("Invalid menu option.");
     }
     
     
   return 0;
-}
-
-void CaesarEncryption(char,int) { //function for finding Caesar Cypher
-    
-    int i=0;
-    int cipherValue;
-    char cipher;
-    
-    while(text[i] != '\0' && strlen(text)-1 > i){
-        cipherValue = ((int)text - 65 + key) % 26 + 65;
-        cipher = (char)(cipherValue)
-        printf("%s", cipher)
-    }
-        
 }
