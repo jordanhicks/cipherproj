@@ -63,7 +63,7 @@ int main()  {
                         caesar = caesar - 65; //from ASCII value                       
                     }
                 
-                text[i] = caesar;
+                text[i] = caesar; //apply encrypted text as output text
                 
                 }
             }
@@ -77,13 +77,13 @@ int main()  {
             printf("By default the key is based off the QWERTY alphabet.\n\n");
             
             for (i=0; text[i] != '\0'; ++i){	    
-	            sub = text[i];
+	            sub = text[i]; //make encrypted text the same as input text
 	    
 	            if (sub >= 'A' && sub <= 'Z'){
-	                j = sub - 65;
-	                sub = subkey[j];
+	                j = sub - 65; //deduct ascii value 
+	                sub = subkey[j]; //initialise the key
 	             }
-	            text[i] = sub;
+	            text[i] = sub; //apply encrypted text as output text
 	        }	
 	        printf("Encrypted text: %s", text);
             break;
