@@ -99,7 +99,7 @@ int main()  {
                 
                 if (sub >= 'A' && sub <= 'Z'){
                     j = sub - 65; //deduct ascii value
-                    sub = regkey[j]; //initialise key to revert to standard alphabet
+                    text[i] = regkey[j]; //initialise key to revert to standard alphabet
                 }
                 text[i] = sub; //apply decrypted text as output text
             }
