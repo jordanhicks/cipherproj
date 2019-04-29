@@ -10,7 +10,7 @@ int main()  {
     char regkey[200] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //regular alphabet key
     char caesar; //encrypted caesar text
     char sub; //encrypted substitution text
-    int i; //letter value
+    int i; //letter value.
     int j; //substitution letters
     
     printf("Enter your message: "); 
